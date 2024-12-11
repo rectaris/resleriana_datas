@@ -1,0 +1,131 @@
+{
+    "未来に夢を求めし者": {
+        "name": "レスナ",
+        "element": "火",
+        "role": "アタッカー",
+        "status": {
+            "HP": "2631",
+            "素早さ": "244",
+            "物攻": "807",
+            "物防": "709",
+            "魔攻": "962",
+            "魔防": "690"
+        },
+        "synthesis_gift": {
+            "gift_color": {
+                "right": "黃",
+                "left": "緑"
+            },
+            "item_gift": {
+                "1": "魔力の祝福",
+                "2": "単体回復ボーナス"
+            },
+            "equip_gift": "魔法ダメージ上昇"
+        },
+        "skill": {
+            "1": {
+                "name": "ステラシャワー",
+                "type": "魔法",
+                "element": "火",
+                "target": {
+                    "target": "敵",
+                    "quantity": "単体",
+                    "terms": "選択",
+                    "effect": {
+                        "effect": "攻撃",
+                        "effect_size": "85",
+                        "brake_damage": "7"
+                    }
+                },
+                "wait": "100",
+                "additional_effect": {
+                    "timing": "攻撃後",
+                    "target": {
+                        "target": "味方",
+                        "quantity": "単体",
+                        "terms": "自身",
+                        "effect": {
+                            "effect": "スキルダメージ+",
+                            "effect_size": "10",
+                            "frequency": "2"
+                        }
+                    }
+                }
+            },
+            "2": {
+                "name": "ステラクラフト",
+                "type": "魔法",
+                "element": "火",
+                "target": {
+                    "target": "敵",
+                    "quantity": "単体",
+                    "effect": {
+                        "effect": "攻撃",
+                        "effect_size": "338",
+                        "brake_damage": "41"
+                    }
+                },
+                "wait": "200",
+                "additional_effect": {
+                    "timing": "",
+                    "target": {
+                        "target": "",
+                        "quantity": "",
+                        "terms": "",
+                        "effect": {
+                            "effect": "",
+                            "effect_size": "",
+                            "frequency": ""
+                        }
+                    }
+                }
+            },
+            "burst": {
+                "name": "クイックミックス",
+                "type": "魔法",
+                "element": "火",
+                "target": {
+                    "target": "敵",
+                    "quantity": "全体",
+                    "effect": {
+                        "effect": "攻撃",
+                        "effect_size": "300",
+                        "brake_damage": "37"
+                    }
+                },
+                "wait": "200",
+                "additional_effect": {
+                    "timing": "WEAK攻撃時",
+                    "target": {
+                        "target": "攻撃",
+                        "quantity": "",
+                        "terms": "WEAK攻撃",
+                        "effect": {
+                            "effect": "ダメージ+",
+                            "effect_size": "40",
+                            "frequency": "1"
+                        }
+                    }
+                }
+            }
+        },
+        "reader_skill": {
+            "name": "錬金術オタク",
+            "target": {
+                "target": "味方",
+                "quantity": "全体",
+                "effect": {
+                    "effect": "戦闘アイテムダメージ+",
+                    "effect_size": "50",
+                    "frequency": "-1"
+                }
+            }
+        },
+        "tag": [
+            "ランターナ",
+            "約束と協力",
+            "商人",
+            "読書"
+        ]
+    }
+}
