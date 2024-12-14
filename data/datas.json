@@ -25,7 +25,6 @@
         "skill": {
             "1": {
                 "name": "ステラシャワー",
-                "type": "魔法",
                 "element": "火",
                 "target": {
                     "target": "敵",
@@ -54,7 +53,6 @@
             },
             "2": {
                 "name": "ステラクラフト",
-                "type": "魔法",
                 "element": "火",
                 "target": {
                     "target": "敵",
@@ -82,7 +80,6 @@
             },
             "burst": {
                 "name": "クイックミックス",
-                "type": "魔法",
                 "element": "火",
                 "target": {
                     "target": "敵",
@@ -121,11 +118,210 @@
                 }
             }
         },
+        "ability": {
+            "1": {
+                "name": "アドバンスオール魔防I",
+                "target": {
+                    "target": "味方",
+                    "quantity": "全体",
+                    "effect": {
+                        "effect": "魔防+",
+                        "effect_size": "5"
+                    }
+                }
+            },
+            "2": {
+                "name": "レジストアップ麻痺",
+                "target": {
+                    "target": "味方",
+                    "quantity": "全体",
+                    "effect": {
+                        "effect": "麻痺耐性+",
+                        "effect_size": "30"
+                    }
+                }
+            }
+        },
         "tag": [
             "ランターナ",
             "約束と協力",
             "商人",
             "読書"
         ]
+    },
+    "Wisdom Inquirer": {
+        "name": "ワルター",
+        "element": "雷",
+        "role": "アタッカー",
+        "status": {
+            "HP": "2298",
+            "素早さ": "235",
+            "物攻": "857",
+            "物防": "870",
+            "魔攻": "1069",
+            "魔防": "759"
+        },
+        "synthesis_gift": {
+            "gift_color": {
+                "right": "紫",
+                "left": "赤"
+            },
+            "item_gift": {
+                "1": "魔防の祝福",
+                "2": "使い切り攻撃強化"
+            },
+            "equip_gift": "雷ダメージ上昇"
+        },
+        "skill": {
+            "1": {
+                "name": "アナライズソード",
+                "element": "雷",
+                "target": {
+                    "target": "敵",
+                    "quantity": "単体",
+                    "terms": "選択",
+                    "effect": {
+                        "effect": "攻撃",
+                        "effect_size": "110",
+                        "brake_damage": "8"
+                    }
+                },
+                "wait": "100",
+                "additional_effect": [
+                    {
+                        "timing": "攻撃後",
+                        "target": {
+                            "target": "味方",
+                            "quantity": "単体",
+                            "terms": "自身",
+                            "effect": {
+                                "effect": "スキルダメージ+",
+                                "effect_size": "35",
+                                "frequency": "1"
+                            }
+                        }
+                    },
+                    {
+                        "timing": "攻撃後",
+                        "target": {
+                            "target": "敵",
+                            "quantity": "単体",
+                            "terms": "選択",
+                            "effect": {
+                                "effect": "受ける雷ダメージ+",
+                                "effect_size": "30",
+                                "frequency": "-1",
+                                "limit": "60"
+                            }
+                        }
+                    },
+                    {
+                        "timing": "攻撃後",
+                        "target": {
+                            "target": "パネル",
+                            "quantity": "全体",
+                            "terms": "バーストパネル以外",
+                            "effect": {
+                                "effect": "劇薬パネル生成",
+                                "effect_size": "",
+                                "frequency": "-1",
+                                "limit": ""
+                            }
+                        }
+                    }
+                ]
+            },
+            "2": {
+                "name": "",
+                "element": "",
+                "target": {
+                    "target": "",
+                    "quantity": "",
+                    "effect": {
+                        "effect": "",
+                        "effect_size": "",
+                        "brake_damage": ""
+                    }
+                },
+                "wait": "",
+                "additional_effect": {
+                    "timing": "",
+                    "target": {
+                        "target": "",
+                        "quantity": "",
+                        "terms": "",
+                        "effect": {
+                            "effect": "",
+                            "effect_size": "",
+                            "frequency": ""
+                        }
+                    }
+                }
+            },
+            "burst": {
+                "name": "",
+                "element": "",
+                "target": {
+                    "target": "",
+                    "quantity": "",
+                    "effect": {
+                        "effect": "",
+                        "effect_size": "",
+                        "brake_damage": ""
+                    }
+                },
+                "wait": "",
+                "additional_effect": {
+                    "timing": "",
+                    "target": {
+                        "target": "",
+                        "quantity": "",
+                        "terms": "",
+                        "effect": {
+                            "effect": "",
+                            "effect_size": "",
+                            "frequency": ""
+                        }
+                    }
+                }
+            }
+        },
+        "reader_skill": {
+            "name": "",
+            "target": {
+                "target": "",
+                "quantity": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": "",
+                    "frequency": ""
+                }
+            }
+        },
+        "ability": {
+            "1": {
+                "name": "",
+                "target": {
+                    "target": "",
+                    "quantity": "",
+                    "effect": {
+                        "effect": "",
+                        "effect_size": ""
+                    }
+                }
+            },
+            "2": {
+                "name": "",
+                "target": {
+                    "target": "",
+                    "quantity": "",
+                    "effect": {
+                        "effect": "",
+                        "effect_size": ""
+                    }
+                }
+            }
+        },
+        "tag": []
     }
 }

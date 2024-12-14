@@ -1,0 +1,148 @@
+{
+    "": {
+        "name": "",
+        "element": "",
+        "role": "",
+        "status": {
+            "HP": "",
+            "素早さ": "",
+            "物攻": "",
+            "物防": "",
+            "魔攻": "",
+            "魔防": ""
+        },
+        "synthesis_gift": {
+            "gift_color": {
+                "right": "",
+                "left": ""
+            },
+            "item_gift": {
+                "1": "",
+                "2": ""
+            },
+            "equip_gift": ""
+        },
+        "skill": {
+            "1": {
+                "name": "",
+                "element": "",
+                "target": {
+                    "target": "",
+                    "quantity": "",
+                    "terms": "",
+                    "effect": {
+                        "effect": "",
+                        "effect_size": "",
+                        "brake_damage": ""
+                    }
+                },
+                "wait": "",
+                "additional_effect": {
+                    "timing": "",
+                    "target": {
+                        "target": "",
+                        "quantity": "",
+                        "terms": "",
+                        "effect": {
+                            "effect": "",
+                            "effect_size": "",
+                            "frequency": ""
+                        }
+                    }
+                }
+            },
+            "2": {
+                "name": "",
+                "element": "",
+                "target": {
+                    "target": "",
+                    "quantity": "",
+                    "effect": {
+                        "effect": "",
+                        "effect_size": "",
+                        "brake_damage": ""
+                    }
+                },
+                "wait": "",
+                "additional_effect": {
+                    "timing": "",
+                    "target": {
+                        "target": "",
+                        "quantity": "",
+                        "terms": "",
+                        "effect": {
+                            "effect": "",
+                            "effect_size": "",
+                            "frequency": ""
+                        }
+                    }
+                }
+            },
+            "burst": {
+                "name": "",
+                "element": "",
+                "target": {
+                    "target": "",
+                    "quantity": "",
+                    "effect": {
+                        "effect": "",
+                        "effect_size": "",
+                        "brake_damage": ""
+                    }
+                },
+                "wait": "",
+                "additional_effect": {
+                    "timing": "",
+                    "target": {
+                        "target": "",
+                        "quantity": "",
+                        "terms": "",
+                        "effect": {
+                            "effect": "",
+                            "effect_size": "",
+                            "frequency": ""
+                        }
+                    }
+                }
+            }
+        },
+        "reader_skill": {
+            "name": "",
+            "target": {
+                "target": "",
+                "quantity": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": "",
+                    "frequency": ""
+                }
+            }
+        },
+        "ability": {
+            "1": {
+                "name": "",
+                "target": {
+                    "target": "",
+                    "quantity": "",
+                    "effect": {
+                        "effect": "",
+                        "effect_size": ""
+                    }
+                }
+            },
+            "2": {
+                "name": "",
+                "target": {
+                    "target": "",
+                    "quantity": "",
+                    "effect": {
+                        "effect": "",
+                        "effect_size": ""
+                    }
+                }
+            }
+        },
+        "tag": []
+    }
+
+}
