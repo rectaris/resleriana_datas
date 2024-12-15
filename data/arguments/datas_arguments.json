@@ -18,10 +18,24 @@
         "Role3": "ディフェンダー",
         "Role4": "サポーター"
     },
+    "motion_type": {
+        "MotionT1": "攻撃",
+        "MotionT2": "回復",
+        "MotionT3": "補助"
+    },
     "motion_attribute": {
-        "Attr1": "スキルダメージ",
-        "Attr2": "スキル威力",
-        "Attr3": ""
+        "Attr1": {
+            "name": "スキルダメージ",
+            "type": "MotionT1"
+        },
+        "Attr2": {
+            "name": "スキル威力",
+            "type": "MotionT1"
+        },
+        "Attr3": {
+            "name": "クリティカルダメージ",
+            "type": "MotionT1"
+        }
     },
     "synthesis_gift": {
         "gift_color": {
