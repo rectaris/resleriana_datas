@@ -1,12 +1,14 @@
 {
     "element": {
         "魔法": {
+            "ElMa0": "魔法",
             "ElMa1": "火",
             "ElMa2": "氷",
             "ElMa3": "雷",
             "ElMa4": "風"
         },
         "物理": {
+            "ElPh0": "物理",
             "ElPh1": "斬",
             "ElPh2": "打",
             "ElPh3": "突"
@@ -26,16 +28,44 @@
     "motion_attribute": {
         "Attr1": {
             "name": "スキルダメージ",
-            "type": "MotionT1"
+            "motion_attr_type": "MotionT1"
         },
         "Attr2": {
             "name": "スキル威力",
-            "type": "MotionT1"
+            "motion_attr_type": "MotionT1"
         },
         "Attr3": {
             "name": "クリティカルダメージ",
-            "type": "MotionT1"
+            "motion_attr_type": "MotionT1"
+        },
+        "Attr4": {
+            "name": "アイテムダメージ",
+            "motion_attr_type": "MotionT1"
         }
+    },
+    "synthesis_type": {
+        "SynthesisT1": "装備",
+        "SynthesisT2": "アイテム"
+    },
+    "enemy_condition": {
+        "EnemyC0": "通常",
+        "EnemyC1": "ブレイク中"
+    },
+    "enemy_tribe": {
+        "EnemyT1": "ぷに",
+        "EnemyT2": "精霊",
+        "EnemyT3": "獣",
+        "EnemyT4": "鳥",
+        "EnemyT5": "水棲"
+    },
+    "target_selection": {
+        "TargetS1": "敵",
+        "TargetS2": "味方",
+        "TargetS3": "自分"
+    },
+    "target_range": {
+        "TargetR1": "単体",
+        "TargetR2": "全体"
     },
     "synthesis_gift": {
         "gift_color": {
@@ -49,406 +79,466 @@
             "GiftI1": {
                 "name": "剛力の祝福",
                 "effect": {
-                    "effect": "ダメージ+",
-                    "effect_size": "",
-                    "terms": {
-                        "terms1": {}
+                    "effect": "物理攻撃のダメージ+",
+                    "effect_size": {
+                        "I": 3,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 30
                     },
-                    "frequency": ""
-                },
-                "type": ""
+                    "terms": {
+                        "terms1": {
+                            "motion_motion_attr_type": "Attr4",
+                            "element": "ElPh0",
+                            "synthesis_type": "SynthesisT2"
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI2": {
                 "name": "斬の祝福",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "斬属性のダメージ+",
+                    "effect_size": {
+                        "I": 5,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 45
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "ElPh1",
+                            "synthesis_type": "SynthesisT2"
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI3": {
                 "name": "打の祝福",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "打属性のダメージ+",
+                    "effect_size": {
+                        "I": 5,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 45
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "ElPh2",
+                            "synthesis_type": "SynthesisT2"
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI4": {
                 "name": "突の祝福",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "突属性のダメージ+",
+                    "effect_size": {
+                        "I": 5,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 45
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "ElPh3",
+                            "synthesis_type": "SynthesisT2"
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI5": {
                 "name": "魔力の祝福",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "魔法攻撃のダメージ+",
+                    "effect_size": {
+                        "I": 5,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 45
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "ElMa0",
+                            "synthesis_type": "SynthesisT2"
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI6": {
                 "name": "火の祝福",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "火属性のダメージ+",
+                    "effect_size": {
+                        "I": 5,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 45
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "ElMa1",
+                            "synthesis_type": "SynthesisT2"
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI7": {
                 "name": "氷の祝福",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "氷属性のダメージ+",
+                    "effect_size": {
+                        "I": 5,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 45
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "ElMa2",
+                            "synthesis_type": "SynthesisT2"
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI8": {
                 "name": "風の祝福",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "風属性のダメージ+",
+                    "effect_size": {
+                        "I": 5,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 45
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "ElMa4",
+                            "synthesis_type": "SynthesisT2"
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI9": {
                 "name": "雷の祝福",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "雷属性のダメージ+",
+                    "effect_size": {
+                        "I": 5,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 45
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "ElMa3",
+                            "synthesis_type": "SynthesisT2"
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI10": {
                 "name": "ぷに特攻",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "ぷに種族に与えるダメージ+",
+                    "effect_size": {
+                        "I": 6,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 60
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "",
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "EnemyT1",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI11": {
-                "name": "",
+                "name": "精霊特攻",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "精霊種族に与えるダメージ+",
+                    "effect_size": {
+                        "I": 6,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 60
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "",
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "EnemyT2",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI12": {
-                "name": "",
+                "name": "獣特攻",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "獣種族に与えるダメージ+",
+                    "effect_size": {
+                        "I": 6,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 60
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "",
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "EnemyT3",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI13": {
-                "name": "",
+                "name": "鳥特攻",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "鳥種族に与えるダメージ+",
+                    "effect_size": {
+                        "I": 6,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 60
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "",
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "EnemyT4",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI14": {
-                "name": "",
+                "name": "水棲特攻",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "水棲種族に与えるダメージ+",
+                    "effect_size": {
+                        "I": 6,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 60
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "",
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "EnemyT5",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI15": {
-                "name": "",
+                "name": "使い切り攻撃強化",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "アイテムの残り使用回数が1回の時、与えるダメージ+",
+                    "effect_size": {
+                        "I": 5,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 45
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "",
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI16": {
-                "name": "",
+                "name": "追い打ち強化",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "ブレイク中の敵に与えるダメージ+",
+                    "effect_size": {
+                        "I": 6,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 54
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "",
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": "EnemyC1"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI17": {
-                "name": "",
+                "name": "破壊力上昇",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "アイテムが与えるダメージ+",
+                    "effect_size": {
+                        "I": 6,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 54
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr4",
+                            "element": "",
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI18": {
-                "name": "",
+                "name": "与ダメージ上昇",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "スキルダメージ+",
+                    "effect_size": {
+                        "I": 2,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 15
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr1",
+                            "element": "",
+                            "synthesis_type": "SynthesisT1",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI19": {
-                "name": "",
+                "name": "スキル威力上昇",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "スキル威力+",
+                    "effect_size": {
+                        "I": 3,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 25
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr2",
+                            "element": "",
+                            "synthesis_type": "SynthesisT1",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             },
             "GiftI20": {
-                "name": "",
+                "name": "斬ダメージ上昇",
                 "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI21": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI22": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI23": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI24": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI25": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI26": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI27": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI28": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI29": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI30": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI31": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI32": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI33": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI34": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI35": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI36": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI37": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI38": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI39": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI40": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI41": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI42": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI43": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI44": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI45": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI46": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI47": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI48": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI49": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
-            },
-            "GiftI50": {
-                "name": "",
-                "effect": {
-                    "effect": "",
-                    "effect_size": ""
-                },
-                "type": ""
+                    "effect": "斬属性のスキルダメージ+",
+                    "effect_size": {
+                        "I": 3,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 25
+                    },
+                    "terms": {
+                        "terms1": {
+                            "motion_attr_type": "Attr1",
+                            "element": "ElPh1",
+                            "synthesis_type": "SynthesisT1",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": "EnemyC0"
+                            }
+                        }
+                    },
+                    "frequency": "1"
+                }
             }
         }
     },

@@ -1,0 +1,56 @@
+{
+    "element": {
+        "魔法": {
+            "ElMa0": ""
+        },
+        "物理": {
+            "ElPh0": ""
+        }
+    },
+    "role": {
+        "Role": ""
+    },
+    "motion_type": {
+        "MotionT": ""
+    },
+    "motion_attribute": {
+        "Attr": {
+            "name": "",
+            "type": ""
+        }
+    },
+    "synthesis_type": {
+        "SynthesisT": "装備"
+    },
+    "synthesis_gift": {
+        "gift_color": {
+            "GiftC": "青"
+        },
+        "gift_item": {
+            "GiftI": {
+                "name": "",
+                "effect": {
+                    "effect": "+",
+                    "effect_size": {
+                        "I": 0,
+                        "II": 0,
+                        "III": 0,
+                        "IV": 0,
+                        "V": 0
+                    },
+                    "terms": {
+                        "terms": {
+                            "type": "",
+                            "element": "",
+                            "synthesis_type": ""
+                        }
+                    },
+                    "frequency": ""
+                }
+            }
+        }
+    },
+    "tags": {
+        "Tag": ""
+    }
+}
