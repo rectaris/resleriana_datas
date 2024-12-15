@@ -1,0 +1,475 @@
+{
+    "element": {
+        "魔法": {
+            "ElMa1": "火",
+            "ElMa2": "氷",
+            "ElMa3": "雷",
+            "ElMa4": "風"
+        },
+        "物理": {
+            "ElPh1": "斬",
+            "ElPh2": "打",
+            "ElPh3": "突"
+        }
+    },
+    "role": {
+        "Role1": "アタッカー",
+        "Role2": "ブレイカー",
+        "Role3": "ディフェンダー",
+        "Role4": "サポーター"
+    },
+    "motion_attribute": {
+        "Attr1": "スキルダメージ",
+        "Attr2": "スキル威力",
+        "Attr3": ""
+    },
+    "synthesis_gift": {
+        "gift_color": {
+            "GiftC1": "青",
+            "GiftC2": "紫",
+            "GiftC3": "黃",
+            "GiftC4": "赤",
+            "GiftC5": "緑"
+        },
+        "gift_item": {
+            "GiftI1": {
+                "name": "剛力の祝福",
+                "effect": {
+                    "effect": "ダメージ+",
+                    "effect_size": "",
+                    "terms": {
+                        "terms1": {}
+                    },
+                    "frequency": ""
+                },
+                "type": ""
+            },
+            "GiftI2": {
+                "name": "斬の祝福",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI3": {
+                "name": "打の祝福",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI4": {
+                "name": "突の祝福",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI5": {
+                "name": "魔力の祝福",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI6": {
+                "name": "火の祝福",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI7": {
+                "name": "氷の祝福",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI8": {
+                "name": "風の祝福",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI9": {
+                "name": "雷の祝福",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI10": {
+                "name": "ぷに特攻",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI11": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI12": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI13": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI14": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI15": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI16": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI17": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI18": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI19": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI20": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI21": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI22": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI23": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI24": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI25": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI26": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI27": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI28": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI29": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI30": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI31": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI32": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI33": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI34": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI35": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI36": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI37": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI38": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI39": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI40": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI41": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI42": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI43": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI44": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI45": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI46": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI47": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI48": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI49": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            },
+            "GiftI50": {
+                "name": "",
+                "effect": {
+                    "effect": "",
+                    "effect_size": ""
+                },
+                "type": ""
+            }
+        }
+    },
+    "tags": {
+        "Tag1": "アカデミー",
+        "Tag2": "アーランド",
+        "Tag3": "コルセイト",
+        "Tag4": "キルヘン・ベル",
+        "Tag5": "クーケン島",
+        "Tag6": "「声」を聞く者たち",
+        "Tag7": "ランターナ",
+        "Tag8": "正義と探求",
+        "Tag9": "約束と協力",
+        "Tag10": "家族と友情",
+        "Tag11": "レスレリ学園",
+        "Tag12": "騎士",
+        "Tag13": "学生",
+        "Tag14": "商人",
+        "Tag15": "師匠",
+        "Tag16": "読書",
+        "Tag17": "料理",
+        "Tag18": "お菓子",
+        "Tag19": "冒険",
+        "Tag20": "お嬢様",
+        "Tag21": "メガネ",
+        "Tag22": "季節の装い",
+        "Tag23": "竜狩り",
+        "Tag24": "クリエイター",
+        "Tag25": "世話焼き",
+        "Tag26": "おてんば",
+        "Tag27": "ずぼら",
+        "Tag28": "天然",
+        "Tag29": "マイペース",
+        "Tag30": "真面目",
+        "Tag31": "ひょうきん者",
+        "Tag32": "寡黙"
+    }
+}

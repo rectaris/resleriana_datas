@@ -16,11 +16,11 @@
                 "right": "黃",
                 "left": "緑"
             },
-            "item_gift": {
+            "gift_item": {
                 "1": "魔力の祝福",
                 "2": "単体回復ボーナス"
             },
-            "equip_gift": "魔法ダメージ上昇"
+            "gift_equip": "魔法ダメージ上昇"
         },
         "skill": {
             "1": {
@@ -37,19 +37,21 @@
                     }
                 },
                 "wait": "100",
-                "additional_effect": {
-                    "timing": "攻撃後",
-                    "target": {
-                        "target": "味方",
-                        "quantity": "単体",
-                        "terms": "自身",
-                        "effect": {
-                            "effect": "スキルダメージ+",
-                            "effect_size": "10",
-                            "frequency": "2"
+                "additional_effect": [
+                    {
+                        "timing": "攻撃後",
+                        "target": {
+                            "target": "味方",
+                            "quantity": "単体",
+                            "terms": "自身",
+                            "effect": {
+                                "effect": "スキルダメージ+",
+                                "effect_size": "10",
+                                "frequency": "2"
+                            }
                         }
                     }
-                }
+                ]
             },
             "2": {
                 "name": "ステラクラフト",
@@ -64,19 +66,21 @@
                     }
                 },
                 "wait": "200",
-                "additional_effect": {
-                    "timing": "",
-                    "target": {
-                        "target": "",
-                        "quantity": "",
-                        "terms": "",
-                        "effect": {
-                            "effect": "",
-                            "effect_size": "",
-                            "frequency": ""
+                "additional_effect": [
+                    {
+                        "timing": "",
+                        "target": {
+                            "target": "",
+                            "quantity": "",
+                            "terms": "",
+                            "effect": {
+                                "effect": "",
+                                "effect_size": "",
+                                "frequency": ""
+                            }
                         }
                     }
-                }
+                ]
             },
             "burst": {
                 "name": "クイックミックス",
@@ -91,19 +95,21 @@
                     }
                 },
                 "wait": "200",
-                "additional_effect": {
-                    "timing": "WEAK攻撃時",
-                    "target": {
-                        "target": "攻撃",
-                        "quantity": "",
-                        "terms": "WEAK攻撃",
-                        "effect": {
-                            "effect": "ダメージ+",
-                            "effect_size": "40",
-                            "frequency": "1"
+                "additional_effect": [
+                    {
+                        "timing": "WEAK攻撃時",
+                        "target": {
+                            "target": "攻撃",
+                            "quantity": "",
+                            "terms": "WEAK攻撃",
+                            "effect": {
+                                "effect": "ダメージ+",
+                                "effect_size": "40",
+                                "frequency": "1"
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         "reader_skill": {
@@ -166,11 +172,11 @@
                 "right": "紫",
                 "left": "赤"
             },
-            "item_gift": {
+            "gift_item": {
                 "1": "魔防の祝福",
                 "2": "使い切り攻撃強化"
             },
-            "equip_gift": "雷ダメージ上昇"
+            "gift_equip": "雷ダメージ上昇"
         },
         "skill": {
             "1": {
@@ -244,19 +250,21 @@
                     }
                 },
                 "wait": "",
-                "additional_effect": {
-                    "timing": "",
-                    "target": {
-                        "target": "",
-                        "quantity": "",
-                        "terms": "",
-                        "effect": {
-                            "effect": "",
-                            "effect_size": "",
-                            "frequency": ""
+                "additional_effect": [
+                    {
+                        "timing": "",
+                        "target": {
+                            "target": "",
+                            "quantity": "",
+                            "terms": "",
+                            "effect": {
+                                "effect": "",
+                                "effect_size": "",
+                                "frequency": ""
+                            }
                         }
                     }
-                }
+                ]
             },
             "burst": {
                 "name": "",
@@ -271,19 +279,21 @@
                     }
                 },
                 "wait": "",
-                "additional_effect": {
-                    "timing": "",
-                    "target": {
-                        "target": "",
-                        "quantity": "",
-                        "terms": "",
-                        "effect": {
-                            "effect": "",
-                            "effect_size": "",
-                            "frequency": ""
+                "additional_effect": [
+                    {
+                        "timing": "",
+                        "target": {
+                            "target": "",
+                            "quantity": "",
+                            "terms": "",
+                            "effect": {
+                                "effect": "",
+                                "effect_size": "",
+                                "frequency": ""
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         "reader_skill": {

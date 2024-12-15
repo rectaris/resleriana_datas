@@ -37,19 +37,21 @@
                     }
                 },
                 "wait": "",
-                "additional_effect": {
-                    "timing": "",
-                    "target": {
-                        "target": "",
-                        "quantity": "",
-                        "terms": "",
-                        "effect": {
-                            "effect": "",
-                            "effect_size": "",
-                            "frequency": ""
+                "additional_effect": [
+                    {
+                        "timing": "",
+                        "target": {
+                            "target": "",
+                            "quantity": "",
+                            "terms": "",
+                            "effect": {
+                                "effect": "",
+                                "effect_size": "",
+                                "frequency": ""
+                            }
                         }
                     }
-                }
+                ]
             },
             "2": {
                 "name": "",
@@ -64,19 +66,21 @@
                     }
                 },
                 "wait": "",
-                "additional_effect": {
-                    "timing": "",
-                    "target": {
-                        "target": "",
-                        "quantity": "",
-                        "terms": "",
-                        "effect": {
-                            "effect": "",
-                            "effect_size": "",
-                            "frequency": ""
+                "additional_effect": [
+                    {
+                        "timing": "",
+                        "target": {
+                            "target": "",
+                            "quantity": "",
+                            "terms": "",
+                            "effect": {
+                                "effect": "",
+                                "effect_size": "",
+                                "frequency": ""
+                            }
                         }
                     }
-                }
+                ]
             },
             "burst": {
                 "name": "",
@@ -91,19 +95,21 @@
                     }
                 },
                 "wait": "",
-                "additional_effect": {
-                    "timing": "",
-                    "target": {
-                        "target": "",
-                        "quantity": "",
-                        "terms": "",
-                        "effect": {
-                            "effect": "",
-                            "effect_size": "",
-                            "frequency": ""
+                "additional_effect": [
+                    {
+                        "timing": "",
+                        "target": {
+                            "target": "",
+                            "quantity": "",
+                            "terms": "",
+                            "effect": {
+                                "effect": "",
+                                "effect_size": "",
+                                "frequency": ""
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         "reader_skill": {
@@ -144,5 +150,4 @@
         },
         "tag": []
     }
-
 }
