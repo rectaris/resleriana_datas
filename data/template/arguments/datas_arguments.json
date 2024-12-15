@@ -20,13 +20,13 @@
         }
     },
     "synthesis_type": {
-        "SynthesisT": "装備"
+        "SynthesisT": ""
     },
     "synthesis_gift": {
         "gift_color": {
-            "GiftC": "青"
+            "GiftC": ""
         },
-        "gift_item": {
+        "gift_trait": {
             "GiftI": {
                 "name": "",
                 "effect": {
@@ -42,7 +42,11 @@
                         "terms": {
                             "type": "",
                             "element": "",
-                            "synthesis_type": ""
+                            "synthesis_type": "",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": ""

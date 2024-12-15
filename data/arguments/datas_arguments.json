@@ -75,7 +75,7 @@
             "GiftC4": "赤",
             "GiftC5": "緑"
         },
-        "gift_item": {
+        "gift_trait": {
             "GiftI1": {
                 "name": "剛力の祝福",
                 "effect": {
@@ -91,7 +91,11 @@
                         "terms1": {
                             "motion_motion_attr_type": "Attr4",
                             "element": "ElPh0",
-                            "synthesis_type": "SynthesisT2"
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": "1"
@@ -112,7 +116,11 @@
                         "terms1": {
                             "motion_attr_type": "Attr4",
                             "element": "ElPh1",
-                            "synthesis_type": "SynthesisT2"
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": "1"
@@ -133,7 +141,11 @@
                         "terms1": {
                             "motion_attr_type": "Attr4",
                             "element": "ElPh2",
-                            "synthesis_type": "SynthesisT2"
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": "1"
@@ -154,7 +166,11 @@
                         "terms1": {
                             "motion_attr_type": "Attr4",
                             "element": "ElPh3",
-                            "synthesis_type": "SynthesisT2"
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": "1"
@@ -175,7 +191,11 @@
                         "terms1": {
                             "motion_attr_type": "Attr4",
                             "element": "ElMa0",
-                            "synthesis_type": "SynthesisT2"
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": "1"
@@ -196,7 +216,11 @@
                         "terms1": {
                             "motion_attr_type": "Attr4",
                             "element": "ElMa1",
-                            "synthesis_type": "SynthesisT2"
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": "1"
@@ -217,7 +241,11 @@
                         "terms1": {
                             "motion_attr_type": "Attr4",
                             "element": "ElMa2",
-                            "synthesis_type": "SynthesisT2"
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": "1"
@@ -238,7 +266,11 @@
                         "terms1": {
                             "motion_attr_type": "Attr4",
                             "element": "ElMa4",
-                            "synthesis_type": "SynthesisT2"
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": "1"
@@ -259,7 +291,11 @@
                         "terms1": {
                             "motion_attr_type": "Attr4",
                             "element": "ElMa3",
-                            "synthesis_type": "SynthesisT2"
+                            "synthesis_type": "SynthesisT2",
+                            "target": {
+                                "enemy_tribe": "",
+                                "enemy_condition": ""
+                            }
                         }
                     },
                     "frequency": "1"
